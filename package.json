@@ -1,6 +1,7 @@
 {
   "name": "neighborhood-map",
   "version": "1.0.0",
+  "branch": "stable",
   "description": "library for building a neighborhood map web page",
   "main": "build",
   "dependencies": {},
@@ -17,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alcarruth/neighborhood-map.git"
+    "url": "https://github.com/alcarruth/neighborhood-map.git#stable"
   },
   "author": "Al Carruth",
   "license": "MIT"
