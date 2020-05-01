@@ -463,17 +463,5 @@ class Neighborhood_Map
 
 
 
-init = ->
-  neighborhood_Map = new Neighborhood_Map()
-  neighborhood_Map.init(austin_Places)
-  window.neighborhood_Map = neighborhood_Map
-
 if window?
-
-  if document.readyState == 'complete'
-    init()
-  else
-    document.onreadystatechange = ->
-      if document.readyState == 'complete'
-        init()
-        
+  window.Neighborhood_Map = Neighborhood_Map

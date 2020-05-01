@@ -8,7 +8,7 @@
    * @param {PLace} place - an instance of the Place class 
    * @param {Map_View} map_View - an instance of the Map_View class 
    */
-  var Google_Maps_API, Info_View, JSONP_Controller, JSONP_Request, Map_View, Marker_View, Menu_View, Neighborhood_Map, Place, Wikipedia_API, init;
+  var Google_Maps_API, Info_View, JSONP_Controller, JSONP_Request, Map_View, Marker_View, Menu_View, Neighborhood_Map, Place, Wikipedia_API;
 
   /* Class JSONP_Controller */
   /**
@@ -580,23 +580,8 @@
 
   };
 
-  init = function() {
-    var neighborhood_Map;
-    neighborhood_Map = new Neighborhood_Map();
-    neighborhood_Map.init(austin_Places);
-    return window.neighborhood_Map = neighborhood_Map;
-  };
-
   if (typeof window !== "undefined" && window !== null) {
-    if (document.readyState === 'complete') {
-      init();
-    } else {
-      document.onreadystatechange = function() {
-        if (document.readyState === 'complete') {
-          return init();
-        }
-      };
-    }
+    window.Neighborhood_Map = Neighborhood_Map;
   }
 
 }).call(this);
