@@ -1,0 +1,24 @@
+{
+  "name": "neighborhood-map",
+  "version": "1.0.0",
+  "description": "library for building a neighborhood map web page",
+  "main": "build",
+  "dependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.4.1",
+    "js-beautify": "^1.11.0",
+    "knockout": "^3.5.1",
+    "minify": "^5.1.1",
+    "uglify-js": "^3.9.1"
+  },
+  "scripts": {
+    "build": "bin/build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alcarruth/neighborhood-map.git"
+  },
+  "author": "Al Carruth",
+  "license": "MIT"
+}
